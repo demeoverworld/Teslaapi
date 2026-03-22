@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "TST_API.Controllers.CarPartsController",
+    "Method": "GetAllParts",
+    "RelativePath": "api/CarParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TST_API.Controllers.CarPartsController",
+    "Method": "CreatePart",
+    "RelativePath": "api/CarParts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPart",
+        "Type": "TST_API.Models.CarParts",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TST_API.Controllers.CarPartsController",
+    "Method": "GetPartById",
+    "RelativePath": "api/CarParts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TST_API.Controllers.CarPartsController",
+    "Method": "DeletePart",
+    "RelativePath": "api/CarParts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TST_API.Controllers.CarPartsController",
+    "Method": "UpdateStock",
+    "RelativePath": "api/CarParts/{id}/UpdateStock",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newStock",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
