@@ -15,9 +15,8 @@ WORKDIR /src
 COPY ["TST_API.csproj", "./"]
 RUN dotnet restore "TST_API.csproj"
 COPY . .
-RUN dotnet build "TST_API.csproj" -c Release -o /app/build
 WORKDIR "/src/TST_API"
-RUN dotnet build "./TST_API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "TST_API.csproj" -c Release -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
