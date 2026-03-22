@@ -12,7 +12,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TST_API/TST_API.csproj", "TST_API/"]
+COPY ["TST_API.csproj", "./"]
 RUN dotnet restore "./TST_API/TST_API.csproj"
 COPY . .
 WORKDIR "/src/TST_API"
